@@ -1,38 +1,80 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  margin: 1.5rem;
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.coffee--text {
   display: flex;
   flex-direction: column;
+  gap: 0.7rem;
+}
+
+.coffee--price {
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+}
+
+.coffee--operations {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.coffee--image-icon {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.counter {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 3rem;
+}
+.counter--output {
+  font-size: 1rem;
+  text-align: center;
+  display: flex;
+  height: 8rem;
+  border: none;
+  background-color: #ccc;
+  border-radius: 2px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: flex-start;
+  color: #252525;
+  outline: none;
+  border: none;
 }
-
-.App-link {
-  color: #61dafb;
+.counter input[type=number]::-webkit-inner-spin-button,
+.counter input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.counter--arrow-inc {
+  border: none;
+  background-color: #ccc;
+  width: 3rem;
+  height: 1rem;
+  padding: 0;
+  cursor: pointer;
+  color: #252525;
+  border-radius: 1rem 1rem 0 0;
 }
+.counter--arrow-dec {
+  border: none;
+  background-color: #ccc;
+  width: 3rem;
+  height: 1rem;
+  padding: 0;
+  cursor: pointer;
+  color: #252525;
+  border-radius: 0 0 1rem 1rem;
+}/*# sourceMappingURL=App.css.map */
